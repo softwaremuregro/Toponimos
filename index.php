@@ -42,7 +42,7 @@ Developed by www.kuper.mx
 
             <div class="large-12 center columns bgamarillo" id="btnUpdate">
                 <h1>Topónimos</h1>
-                <h2 style="color: #00ff95;">Museo Regional de Guerrero </h2>
+                <h2 Museo Regional de Guerrero </h2>
             </div>
 
         </div>
