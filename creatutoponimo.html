@@ -1,0 +1,728 @@
+
+<!doctype html>
+<!--
+  
+Developed by www.kuper.mx  
+  _                          
+ | |                         
+ | | ___   _ _ __   ___ _ __ 
+ | |/ / | | | '_ \ / _ \ '__|
+ |   <| |_| | |_) |  __/ |   
+ |_|\_\\__,_| .__/ \___|_|   
+            | |              
+            |_|                                                                                                                                
+-->
+<html class="no-js" lang="en">
+    <head>
+
+        <!-- Styles & JS -->
+        <!-- META -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:locale" content="es_ES"/>        
+
+
+
+        <link rel="stylesheet" href="css/foundation.css" />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/animate.min.css" />
+        <link rel="stylesheet" href="css/fonts.css" />    
+
+
+        <title>Video | Topónimos</title>
+
+    </head>
+    <body>
+
+        <div id="container">       
+
+            <div id="header">          
+                <div class="large-10 medium-8 small-9 columns">
+
+                    <h1>Topónimos</h1>
+                    <h2>Museo Regional de Guerrero</h2>
+
+                </div>
+
+                <div class="large-2 medium-4 small-5 columns"> <a href="index.php" id="inicio"><img src="img/inicio.png" alt=""></a> </div>
+            </div>
+
+
+            <div id="content">
+
+
+
+                <div class="large-10 top30 columns">
+
+                    <h2>Crea tu propio topónimo </h2>
+                    <hr>
+
+
+                    <p>Instrucciones: Selecciona tres glifos para construir tu propio topónimo.  </p>
+
+                    <div class="large-12 columns margincero">
+
+                        <button class="topo" id="i-1"><img src="img/links/1_glifo.png" ><span>Tépetl: cerro</span><div class="select"></div></button>
+                        <button class="topo" id="i-2"><img src="img/links/2_glifo.png"><span>Ácatl: caña</span><div class="select"></div></button>
+                        <button class="topo" id="i-3"><img src="img/links/3_glifo.png"><span>Íchcatl: algodón</span><div class="select"></div></button>
+                        <button class="topo" id="i-4"><img src="img/links/4_glifo.png"><span>Teopantli: templo</span><div class="select"></div></button>
+                        <button class="topo" id="i-5"><img src="img/links/5_glifo.png"><span>Áyotl: tortuga</span><div class="select"></div></button>
+                        <button class="topo" id="i-6"><img src="img/links/6_glifo.png"><span>Atl: agua</span><div class="select"></div></button>
+                        <button class="topo" id="i-7"><img src="img/links/7_glifo.png"><span>Tzícatl: hormiga</span><div class="select"></div></button>
+                        <button class="topo" id="i-8"><img src="img/links/8_glifo.png"><span>Cóyotl: coyote</span><div class="select"></div></button>
+                        <button class="topo" id="i-9"><img src="img/links/9_glifo.png"><span>Copalli: copal</span><div class="select"></div></button>
+                        <button class="topo" id="i-10"><img src="img/links/10_glifo.png"><span>Cocollan: lugar de discordia</span><div class="select"></div></button>
+                        <button class="topo" id="i-11"><img src="img/links/11_glifo.png"><span>Cuauhxinicuilli: planta de fruto comestible</span><div class="select"></div></button>
+                        <button class="topo" id="i-12"><img src="img/links/12_glifo.png"><span>Xóchitl: flor</span><div class="select"></div></button>
+                        <button class="topo" id="i-13"><img src="img/links/13_glifo.png"><span>Cuáitl: cabeza</span><div class="select"></div></button>
+                        <button class="topo" id="i-14"><img src="img/links/14_glifo.png"><span>Cuáhuitl : árbol</span><div class="select"></div></button>
+                        <button class="topo" id="i-15"><img src="img/links/15_glifo.png"><span>Tetl: piedra</span><div class="select"></div></button>
+                        <button class="topo" id="i-16"><img src="img/links/16_glifo.png"><span>Chilli: chile</span><div class="select"></div></button>
+                        <button class="topo" id="i-17"><img src="img/links/17_glifo.png"><span>Xocotl: guayaba</span><div class="select"></div></button>
+                        <button class="topo" id="i-18"><img src="img/links/18_glifo.png"><span>Totollin: guajolote</span><div class="select"></div></button>
+                        <button class="topo" id="i-19"><img src="img/links/19_glifo.png"><span>Tlácotl: mimbre</span><div class="select"></div></button>
+                        <button class="topo" id="i-20"><img src="img/links/20_glifo.png"><span>Tenámitl: muralla</span><div class="select"></div></button>
+                        <button class="topo" id="i-21"><img src="img/links/21_glifo.png"><span>Atóyatl: río</span><div class="select"></div></button>
+
+                    </div>
+
+
+                </div>
+
+                <div class="large-2 top20 columns">
+
+                    <div class="large-12 columns links top30" >
+
+                        <a href="creatutoponimo.html"> Reiniciar</a> 
+                        <div class="large-12 columns top20"></div>
+
+
+                        <form action="creatutoponimo-paso2.php">
+                            <button id="continuar" type="submit" disabled class=""> Debes seleccionar 3 glifos para continuar</button> 
+
+                            <input type="hidden" id="valor1-nombre" name="v1-n" value="">
+                            <input type="hidden" id="valor1-imagen" name="v1-imagen" value="">
+                            <input type="hidden" id="valor2-nombre" name="v2-n" value="">
+                            <input type="hidden" id="valor2-imagen" name="v2-imagen" value="">
+                            <input type="hidden" id="valor3-nombre" name="v3-n" value="">
+                            <input type="hidden" id="valor3-imagen" name="v3-imagen" value="">
+                            <input type="hidden" id="valor4-nombre" name="v4-n" value="">
+                            <input type="hidden" id="valor4-imagen" name="v4-imagen" value="">
+                            <input type="hidden" id="valor5-nombre" name="v5-n" value="">
+                            <input type="hidden" id="valor5-imagen" name="v5-imagen" value="">
+                            <input type="hidden" id="valor6-nombre" name="v6-n" value="">
+                            <input type="hidden" id="valor6-imagen" name="v6-imagen" value="">
+                            <input type="hidden" id="valor7-nombre" name="v7-n" value="">
+                            <input type="hidden" id="valor7-imagen" name="v7-imagen" value="">
+                            <input type="hidden" id="valor8-nombre" name="v8-n" value="">
+                            <input type="hidden" id="valor8-imagen" name="v8-imagen" value="">
+                            <input type="hidden" id="valor9-nombre" name="v9-n" value="">
+                            <input type="hidden" id="valor9-imagen" name="v9-imagen" value="">
+                            <input type="hidden" id="valor10-nombre" name="v10-n" value="">
+                            <input type="hidden" id="valor10-imagen" name="v10-imagen" value="">
+                            <input type="hidden" id="valor11-nombre" name="v11-n" value="">
+                            <input type="hidden" id="valor11-imagen" name="v11-imagen" value="">
+                            <input type="hidden" id="valor12-nombre" name="v12-n" value="">
+                            <input type="hidden" id="valor12-imagen" name="v12-imagen" value="">
+                            <input type="hidden" id="valor13-nombre" name="v13-n" value="">
+                            <input type="hidden" id="valor13-imagen" name="v13-imagen" value="">
+                            <input type="hidden" id="valor14-nombre" name="v14-n" value="">
+                            <input type="hidden" id="valor14-imagen" name="v14-imagen" value="">
+                            <input type="hidden" id="valor15-nombre" name="v15-n" value="">
+                            <input type="hidden" id="valor15-imagen" name="v15-imagen" value="">
+                            <input type="hidden" id="valor16-nombre" name="v16-n" value="">
+                            <input type="hidden" id="valor16-imagen" name="v16-imagen" value="">
+                            <input type="hidden" id="valor17-nombre" name="v17-n" value="">
+                            <input type="hidden" id="valor17-imagen" name="v17-imagen" value="">
+                            <input type="hidden" id="valor18-nombre" name="v18-n" value="">
+                            <input type="hidden" id="valor18-imagen" name="v18-imagen" value="">
+                            <input type="hidden" id="valor19-nombre" name="v19-n" value="">
+                            <input type="hidden" id="valor19-imagen" name="v19-imagen" value="">
+                            <input type="hidden" id="valor20-nombre" name="v20-n" value="">
+                            <input type="hidden" id="valor20-imagen" name="v20-imagen" value="">
+                            <input type="hidden" id="valor21-nombre" name="v21-n" value="">
+                            <input type="hidden" id="valor21-imagen" name="v21-imagen" value="">
+
+
+                        </form>               
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+        </div> 
+
+
+
+
+        <script src="js/vendor/jquery.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/jquery.bxslider.js"></script>
+        <script src="js/foundation.min.js"></script>
+
+
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+
+
+
+                var count = 0;
+
+                $("#i-1").click(function () {
+                    if (!$('#i-1 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-1 div').addClass('active');
+                    totales();
+                });
+                $("#i-2").click(function () {
+                    if (!$('#i-2 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-2 div').addClass('active');
+                    totales();
+                });
+                $("#i-3").click(function () {
+                    if (!$('#i-3 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-3 div').addClass('active');
+                    totales();
+                });
+                $("#i-4").click(function () {
+                    if (!$('#i-4 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-4 div').addClass('active');
+                    totales();
+                });
+                $("#i-5").click(function () {
+                    if (!$('#i-5 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-5 div').addClass('active');
+                    totales();
+                });
+                $("#i-6").click(function () {
+                    if (!$('#i-6 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-6 div').addClass('active');
+                    totales();
+                });
+                $("#i-7").click(function () {
+                    if (!$('#i-7 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-7 div').addClass('active');
+                    totales();
+                });
+                $("#i-8").click(function () {
+                    if (!$('#i-8 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-8 div').addClass('active');
+                    totales();
+                });
+                $("#i-9").click(function () {
+                    if (!$('#i-9 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-9 div').addClass('active');
+                    totales();
+                });
+                $("#i-10").click(function () {
+                    if (!$('#i-10 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-10 div').addClass('active');
+                    totales();
+                });
+                $("#i-11").click(function () {
+                    if (!$('#i-11 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-11 div').addClass('active');
+                    totales();
+                });
+                $("#i-12").click(function () {
+                    if (!$('#i-12 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-12 div').addClass('active');
+                    totales();
+                });
+                $("#i-13").click(function () {
+                    if (!$('#i-13 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-13 div').addClass('active');
+                    totales();
+                });
+                $("#i-14").click(function () {
+                    if (!$('#i-14 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-14 div').addClass('active');
+                    totales();
+                });
+                $("#i-15").click(function () {
+                    if (!$('#i-15 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-15 div').addClass('active');
+                    totales();
+                });
+                $("#i-16").click(function () {
+                    if (!$('#i-16 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-16 div').addClass('active');
+                    totales();
+                });
+                $("#i-17").click(function () {
+                    if (!$('#i-17 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-17 div').addClass('active');
+                    totales();
+                });
+                $("#i-18").click(function () {
+                    if (!$('#i-18 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-18 div').addClass('active');
+                    totales();
+                });
+                $("#i-19").click(function () {
+                    if (!$('#i-19 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-19 div').addClass('active');
+                    totales();
+                });
+                $("#i-20").click(function () {
+                    if (!$('#i-20 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-20 div').addClass('active');
+                    totales();
+                });
+                $("#i-21").click(function () {
+                    if (!$('#i-21 div').hasClass('active')) {
+                        count++;
+                    }
+                    $('#i-21 div').addClass('active');
+                    totales();
+                });
+
+                function totales() {
+
+                    $i1 = "";
+                    $i1img = "";
+                    $i2 = "";
+                    $i2img = "";
+                    $i3 = "";
+                    $i3img = "";
+                    $i4 = "";
+                    $i4img = "";
+                    $i5 = "";
+                    $i5img = "";
+                    $i6 = "";
+                    $i6img = "";
+                    $i7 = "";
+                    $i7img = "";
+                    $i8 = "";
+                    $i8img = "";
+                    $i9 = "";
+                    $i9img = "";
+                    $i10 = "";
+                    $i10img = "";
+                    $i11 = "";
+                    $i11img = "";
+                    $i12 = "";
+                    $i12img = "";
+                    $i13 = "";
+                    $i13img = "";
+                    $i14 = "";
+                    $i14img = "";
+                    $i15 = "";
+                    $i15img = "";
+                    $i16 = "";
+                    $i16img = "";
+                    $i17 = "";
+                    $i17img = "";
+                    $i18 = "";
+                    $i18img = "";
+                    $i19 = "";
+                    $i19img = "";
+                    $i20 = "";
+                    $i20img = "";
+                    $i21 = "";
+                    $i21img = "";
+
+
+                    if (count == 3) {
+
+                        if (!$('#i-1 div').hasClass('active')) {
+                            $('#i-1').hide();
+                        } else {
+                            $i1img = '1';
+                            $i1 = 'Tépetl: cerro';
+                        }
+                        if (!$('#i-2 div').hasClass('active')) {
+                            $('#i-2').hide();
+                        } else {
+                            $i2img = '2';
+                            $i2 = 'Ácatl: caña';
+                        }
+                        if (!$('#i-3 div').hasClass('active')) {
+                            $('#i-3').hide();
+                        } else {
+                            $i3img = '3';
+                            $i3 = 'Íchcatl: algodón';
+                        }
+                        if (!$('#i-4 div').hasClass('active')) {
+                            $('#i-4 ').hide();
+                        } else {
+                            $i4img = '4';
+                            $i4 = 'Teopantli: templo';
+                        }
+                        if (!$('#i-5 div').hasClass('active')) {
+                            $('#i-5 ').hide();
+                        } else {
+                            $i5img = '5';
+                            $i5 = 'Áyotl: tortuga';
+                        }
+                        if (!$('#i-6 div').hasClass('active')) {
+                            $('#i-6 ').hide();
+                        } else {
+                            $i6img = '6';
+                            $i6 = 'Atl: agua';
+                        }
+                        if (!$('#i-7 div').hasClass('active')) {
+                            $('#i-7 ').hide();
+                        } else {
+                            $i7img = '7';
+                            $i7 = 'Tzícatl: hormiga';
+                        }
+                        if (!$('#i-8 div').hasClass('active')) {
+                            $('#i-8 ').hide();
+                        } else {
+                            $i8img = '8';
+                            $i8 = 'Cóyotl: coyote';
+                        }
+                        if (!$('#i-9 div').hasClass('active')) {
+                            $('#i-9 ').hide();
+                        } else {
+                            $i9img = '9';
+                            $i9 = 'Copalli: copal';
+                        }
+                        if (!$('#i-10 div').hasClass('active')) {
+                            $('#i-10 ').hide();
+                        } else {
+                            $i10img = '10';
+                            $i10 = 'Cocollan: lugar de discordia';
+                        }
+                        if (!$('#i-11 div').hasClass('active')) {
+                            $('#i-11 ').hide();
+                        } else {
+                            $i11img = '11';
+                            $i11 = 'Cuauhxinicuilli: planta de fruto comestible';
+                        }
+                        if (!$('#i-12 div').hasClass('active')) {
+                            $('#i-12 ').hide();
+                        } else {
+                            $i12img = '12';
+                            $i12 = 'Xóchitl: flor';
+                        }
+                        if (!$('#i-13 div').hasClass('active')) {
+                            $('#i-13 ').hide();
+                        } else {
+                            $i13img = '13';
+                            $i13 = 'Cuáitl: cabeza';
+                        }
+                        if (!$('#i-14 div').hasClass('active')) {
+                            $('#i-14 ').hide();
+                        } else {
+                            $i14img = '14';
+                            $i14 = 'Cuáhuitl : árbol';
+                        }
+                        if (!$('#i-15 div').hasClass('active')) {
+                            $('#i-15 ').hide();
+                        } else {
+                            $i15img = '15';
+                            $i15 = 'Tetl: piedra';
+                        }
+                        if (!$('#i-16 div').hasClass('active')) {
+                            $('#i-16 ').hide();
+                        } else {
+                            $i16img = '16';
+                            $i16 = 'Chilli: chile';
+                        }
+                        if (!$('#i-17 div').hasClass('active')) {
+                            $('#i-17 ').hide();
+                        } else {
+                            $i17img = '17';
+                            $i17 = 'Xocotl: guayaba';
+                        }
+                        if (!$('#i-18 div').hasClass('active')) {
+                            $('#i-18 ').hide();
+                        } else {
+                            $i18img = '18';
+                            $i18 = 'Totollin: guajolote';
+                        }
+                        if (!$('#i-19 div').hasClass('active')) {
+                            $('#i-19 ').hide();
+                        } else {
+                            $i19img = '19';
+                            $i19 = 'Tlácotl: mimbre';
+                        }
+                        if (!$('#i-20 div').hasClass('active')) {
+                            $('#i-20 ').hide();
+                        } else {
+                            $i20img = '20';
+                            $i20 = 'Tenámitl: muralla';
+                        }
+                        if (!$('#i-21 div').hasClass('active')) {
+                            $('#i-21 ').hide();
+                        } else {
+                            $i21img = '21';
+                            $i21 = 'Atóyatl: río';
+                        }
+
+
+                        $("#continuar").addClass('active').prop("disabled", false).html('Continuar');
+
+                        if ($i1 == "") {
+                        } else {
+                            $('#valor1-nombre').attr({'value': $i1});
+                        }
+                        if ($i1img == "") {
+                        } else {
+                            $('#valor1-imagen').attr({'value': $i1img});
+                        }
+                        if ($i2 == "") {
+                        } else {
+                            $('#valor2-nombre').attr({'value': $i2});
+                        }
+                        if ($i2img == "") {
+                        } else {
+                            $('#valor2-imagen').attr({'value': $i2img});
+                        }
+                        if ($i3 == "") {
+                        } else {
+                            $('#valor3-nombre').attr({'value': $i3});
+                        }
+                        if ($i3img == "") {
+                        } else {
+                            $('#valor3-imagen').attr({'value': $i3img});
+                        }
+                        if ($i4 == "") {
+                        } else {
+                            $('#valor4-nombre').attr({'value': $i4});
+                        }
+                        if ($i4img == "") {
+                        } else {
+                            $('#valor4-imagen').attr({'value': $i4img});
+                        }
+                        if ($i5 == "") {
+                        } else {
+                            $('#valor5-nombre').attr({'value': $i5});
+                        }
+                        if ($i5img == "") {
+                        } else {
+                            $('#valor5-imagen').attr({'value': $i15img});
+                        }
+                        if ($i6 == "") {
+                        } else {
+                            $('#valor6-nombre').attr({'value': $i6});
+                        }
+                        if ($i6img == "") {
+                        } else {
+                            $('#valor6-imagen').attr({'value': $i6img});
+                        }
+                        if ($i7 == "") {
+                        } else {
+                            $('#valor7-nombre').attr({'value': $i7});
+                        }
+                        if ($i7img == "") {
+                        } else {
+                            $('#valor7-imagen').attr({'value': $i7img});
+                        }
+                        if ($i8 == "") {
+                        } else {
+                            $('#valor8-nombre').attr({'value': $i8});
+                        }
+                        if ($i8img == "") {
+                        } else {
+                            $('#valor8-imagen').attr({'value': $i8img});
+                        }
+                        if ($i9 == "") {
+                        } else {
+                            $('#valor9-nombre').attr({'value': $i9});
+                        }
+                        if ($i9img == "") {
+                        } else {
+                            $('#valor9-imagen').attr({'value': $i9img});
+                        }
+                        if ($i10 == "") {
+                        } else {
+                            $('#valor10-nombre').attr({'value': $i10});
+                        }
+                        if ($i10img == "") {
+                        } else {
+                            $('#valor10-imagen').attr({'value': $i10img});
+                        }
+                        if ($i11 == "") {
+                        } else {
+                            $('#valor11-nombre').attr({'value': $i11});
+                        }
+                        if ($i11img == "") {
+                        } else {
+                            $('#valor11-imagen').attr({'value': $i11img});
+                        }
+                        if ($i12 == "") {
+                        } else {
+                            $('#valor12-nombre').attr({'value': $i12});
+                        }
+                        if ($i12img == "") {
+                        } else {
+                            $('#valor12-imagen').attr({'value': $i12img});
+                        }
+                        if ($i13 == "") {
+                        } else {
+                            $('#valor13-nombre').attr({'value': $i13});
+                        }
+                        if ($i13img == "") {
+                        } else {
+                            $('#valor13-imagen').attr({'value': $i13img});
+                        }
+                        if ($i14 == "") {
+                        } else {
+                            $('#valor14-nombre').attr({'value': $i14});
+                        }
+                        if ($i14img == "") {
+                        } else {
+                            $('#valor14-imagen').attr({'value': $i14img});
+                        }
+                        if ($i15 == "") {
+                        } else {
+                            $('#valor15-nombre').attr({'value': $i15});
+                        }
+                        if ($i15img == "") {
+                        } else {
+                            $('#valor15-imagen').attr({'value': $i15img});
+                        }
+                        if ($i16 == "") {
+                        } else {
+                            $('#valor16-nombre').attr({'value': $i16});
+                        }
+                        if ($i16img == "") {
+                        } else {
+                            $('#valor16-imagen').attr({'value': $i16img});
+                        }
+                        if ($i17 == "") {
+                        } else {
+                            $('#valor17-nombre').attr({'value': $i17});
+                        }
+                        if ($i17img == "") {
+                        } else {
+                            $('#valor17-imagen').attr({'value': $i17img});
+                        }
+                        if ($i18 == "") {
+                        } else {
+                            $('#valor18-nombre').attr({'value': $i18});
+                        }
+                        if ($i18img == "") {
+                        } else {
+                            $('#valor18-imagen').attr({'value': $i18img});
+                        }
+                        if ($i19 == "") {
+                        } else {
+                            $('#valor19-nombre').attr({'value': $i19});
+                        }
+                        if ($i19img == "") {
+                        } else {
+                            $('#valor19-imagen').attr({'value': $i19img});
+                        }
+                        if ($i20 == "") {
+                        } else {
+                            $('#valor20-nombre').attr({'value': $i20});
+                        }
+                        if ($i20img == "") {
+                        } else {
+                            $('#valor20-imagen').attr({'value': $i20img});
+                        }
+                        if ($i21 == "") {
+                        } else {
+                            $('#valor21-nombre').attr({'value': $i21});
+                        }
+                        if ($i21img == "") {
+                        } else {
+                            $('#valor21-imagen').attr({'value': $i21img});
+                        }
+
+
+
+                        count = 3;
+
+                    }
+
+                    console.log(count + $i1 + $i1img);
+
+                }
+
+            });
+        </script>
+
+
+
+        <script type="text/javascript">
+            var idleTime = 0;
+            $(document).ready(function () {
+                //Increment the idle time counter every minute.
+                var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
+
+                //Zero the idle timer on mouse movement.
+                $(this).mousemove(function (e) {
+                    idleTime = 0;
+                });
+                $(this).keypress(function (e) {
+                    idleTime = 0;
+                });
+
+                function timerIncrement() {
+                    idleTime = idleTime + 1;
+                    if (idleTime > 2) { // 20 minutes
+                        window.location.href = 'index.php';
+                    }
+                }
+                $('.bxslider').bxSlider({
+                    infiniteLoop: false,
+                    hideControlOnEnd: true,
+                    easing: 'easeOut',
+                    speed: 500,
+                    autoControls: true,
+                    onSlideBefore: function () {
+                        jQuery('video').trigger('pause');
+                    }
+                });
+            });
+
+        </script> 
+
+
+    </body>
+</html>

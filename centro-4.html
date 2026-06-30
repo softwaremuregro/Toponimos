@@ -1,0 +1,200 @@
+
+<!--
+  
+Developed by www.kuper.mx  
+  _                          
+ | |                         
+ | | ___   _ _ __   ___ _ __ 
+ | |/ / | | | '_ \ / _ \ '__|
+ |   <| |_| | |_) |  __/ |   
+ |_|\_\\__,_| .__/ \___|_|   
+            | |              
+            |_|                                                                                                                                
+-->
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+
+    <!-- Styles & JS -->
+        <!-- META -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:locale" content="es_ES"/>        
+    
+
+    
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+
+    
+    <title>Topónimos</title>
+    
+  </head>
+  <body>
+
+<div id="container">       
+
+      <div id="header" >          
+              <div class="large-10 medium-8 small-9 columns">
+
+                <h1>Topónimos</h1>
+                <h2>Museo Regional de Guerrero</h2>
+
+              </div>
+
+               <div class="large-2 medium-4 small-5 columns"> <a href="index.php" id="inicio"><img src="img/inicio.png" alt=""></a> </div>
+      </div>
+
+
+
+
+      <div class="large-10 columns" id="info2">
+   
+        <div class="large-6 columns top60"> 
+
+            <div class="large-12 columns "> 
+
+
+                    <div class="large-6 columns "> 
+                            <h1>
+                                Centro
+                            </h1> 
+                            <hr>
+                            <p>Municipio: <br>
+                                Chilpancingo de los Bravo.
+                                <br><br>
+
+                                Nombre original:<br>
+                                Chilpantzingo
+                            </p>
+                    </div>
+
+
+
+                    <div class="large-6 columns "> 
+                        <img src="img/links/_11_mapa_chilpancingo.png" alt="">
+                    </div>
+
+                    <div class="large-12 columns "> 
+
+
+                        <div class="large-12 columns "> 
+                        <h1>
+                            Topónimo
+                        </h1> 
+                        <hr>
+                        
+                        </div>
+
+                        <div class="large-12 columns center "> 
+                            <img style=" height: 350px;" src="img/links/chilpancingo.png" alt="">
+                        </div>
+
+
+                    </div>
+                </div>
+        </div>
+
+        <div class="large-6 columns top60"> 
+
+            <div class="large-12 columns "> 
+
+
+                    <div class="large-12 columns "> 
+                            <h1>
+                               Glifo
+                            </h1> 
+                            <hr>
+                            <p>
+                              Chilpan (avispa): representado en el glifo por una figura estilizada de avispa con alas geométricas, antenas y cuerpo segmentado.
+                            </p>
+                            <p>
+                                Tzingo (diminutivo locativo): indica “pequeño lugar” o “en la orilla”, sugerido por la postura agachada de las piernas humanas que sustituyen las patas traseras del insecto, como si estuviera asentada o en reposo.
+                            </p>
+                    </div>
+
+
+
+                    <div class="large-6 columns center "> 
+                        <img style="height: 300px" src="img/links/avispa.png" alt="">
+                            <p>Chilpan: Avispa  </p>
+                    </div>
+                     <div class="large-6 columns center "> 
+                         <img style="height: 300px" src="img/links/piernas.png" alt="">
+                            <p>Tzingo: Diminutivo Locativo  </p>
+                    </div>
+
+                    <div class="large-12 columns "> 
+
+
+                        <div class="large-12 columns "> 
+                        <h1 class='center'>
+                          “Lugar de avispas” o “Pequeño avispero”
+                        </h1> 
+                        </div>                    
+
+                    </div>
+                </div>
+        </div>
+
+        
+       </div>
+
+       <div class="large-2 columns top60" id="info"> 
+        
+      
+             
+        <a onclick="window.history.back();return false;" class="button">Regresar</a>
+        <a href="montana.html" class="button">Siguiente</a>
+
+         
+      </div>
+
+      </div>
+
+            
+</div> 
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/foundation.min.js"></script>
+
+
+<script type="text/javascript">
+var idleTime = 0;
+$(document).ready(function () {
+    //Increment the idle time counter every minute.
+    var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
+
+    //Zero the idle timer on mouse movement.
+    $(this).mousemove(function (e) {
+        idleTime = 0;
+    });
+    $(this).keypress(function (e) {
+        idleTime = 0;
+    });
+
+    function timerIncrement() {
+    idleTime = idleTime + 1;
+    if (idleTime > 2) { // 20 minutes
+        window.location.href = 'index.php';
+    }
+    }
+    $('.bxslider').bxSlider({        
+          infiniteLoop: false,
+          hideControlOnEnd: true,
+          easing: 'easeOut',
+          speed: 500,
+          autoControls: true
+    });
+});
+
+</script> 
+  
+                
+</body>
+</html>

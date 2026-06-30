@@ -1,0 +1,188 @@
+
+<!--
+  
+Developed by www.kuper.mx  
+  _                          
+ | |                         
+ | | ___   _ _ __   ___ _ __ 
+ | |/ / | | | '_ \ / _ \ '__|
+ |   <| |_| | |_) |  __/ |   
+ |_|\_\\__,_| .__/ \___|_|   
+            | |              
+            |_|                                                                                                                                
+-->
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+
+    <!-- Styles & JS -->
+        <!-- META -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:locale" content="es_ES"/>        
+    
+
+    
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+        <style>
+        #infotopos{
+           height: 150px;
+        }
+        .tarjetas{
+            height: 150px;
+        }
+        
+    </style>
+    <title>Topónimos</title>
+    
+  </head>
+  <body>
+
+<div id="container">       
+
+      <div id="header" >          
+              <div class="large-10 medium-8 small-9 columns">
+
+                <h1>Topónimos</h1>
+                <h2>Museo Regional de Guerrero</h2>
+
+              </div>
+
+               <div class="large-2 medium-4 small-5 columns"> <a href="index.php" id="inicio"><img src="img/inicio.png" alt=""></a> </div>
+      </div>
+
+
+
+
+      <div class="large-12 columns" id="info">
+   
+      <div class="large-8 medium-7 columns top30 mapain" > <img src="img/links/centro_top.png" alt=""> </div>
+      <div class="large-4 medium-5 columns top60"> 
+          <h1>
+            Centro
+          </h1> 
+          <hr>
+
+          <div class="large-12 columns top20"> </div>
+          
+       <div class="large-12 columns end" id='infotopos'>
+                 <div class="large-4 columns margincero">
+                     <img class="tarjetas" src="img/links/_9_toponimo_Chilapan.png" alt="">
+                </div>
+                 <div class="large-8 columns margincero">
+                      <h2>
+                         Municipio: 
+                    </h2> 
+                    <h3>
+                    Chilapa de Álvarez
+                    </h3> 
+                     <a href="centro-1.html" class="button rosa">Chilapan</a>
+                 </div>
+
+        </div>
+
+         <div class="large-12 columns top20"> </div>
+
+            <div class="large-12 columns end" id='infotopos'>
+                 <div class="large-4 columns margincero">
+                 <img class="tarjetas" src="img/links/_10_Tlacotepec.png" alt="">
+                </div>
+                 <div class="large-8 columns margincero">
+                      <h2>
+                         Municipio: 
+                    </h2> 
+                    <h3>
+                    Gral. Heliodoro Castillo
+                    </h3> 
+                     <a href="centro-2.html" class="button rosa">Tlacotepec</a>
+                 </div>
+
+        </div>
+
+        <div class="large-12 columns top20"> </div>
+
+            <div class="large-12 columns end" id='infotopos'>
+                 <div class="large-4 columns margincero">
+                 <img class="tarjetas" src="img/links/_11_toponimo_Tenanco.png" alt="">
+                </div>
+                 <div class="large-8 columns margincero">
+                      <h2>
+                         Municipio: 
+                    </h2> 
+                    <h3>
+                    José Joaquín de Herrera
+                    </h3> 
+                     <a href="centro-3.html" class="button rosa">Tenanco</a>
+                 </div>
+
+        </div>
+         <div class="large-12 columns top20"> </div>
+
+            <div class="large-12 columns end" id='infotopos'>
+                 <div class="large-4 columns margincero">
+                     <img class="tarjetas" src="img/links/chilpancingo.png" alt="">
+                </div>
+                 <div class="large-8 columns margincero">
+                      <h2>
+                         Municipio: 
+                    </h2> 
+                    <h3>
+                   Chilpancingo de los Bravo.
+                    </h3> 
+                     <a href="centro-4.html" class="button rosa">Chilpantzinco</a>
+                 </div>
+
+        </div>
+         
+      </div>
+
+
+      </div>
+
+            
+</div> 
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/foundation.min.js"></script>
+
+
+<script type="text/javascript">
+var idleTime = 0;
+$(document).ready(function () {
+    //Increment the idle time counter every minute.
+    var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
+
+    //Zero the idle timer on mouse movement.
+    $(this).mousemove(function (e) {
+        idleTime = 0;
+    });
+    $(this).keypress(function (e) {
+        idleTime = 0;
+    });
+
+    function timerIncrement() {
+    idleTime = idleTime + 1;
+    if (idleTime > 2) { // 20 minutes
+        window.location.href = 'index.php';
+    }
+    }
+    $('.bxslider').bxSlider({        
+          infiniteLoop: false,
+          hideControlOnEnd: true,
+          easing: 'easeOut',
+          speed: 500,
+          autoControls: true
+    });
+});
+
+</script> 
+  
+                
+</body>
+</html>

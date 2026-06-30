@@ -1,0 +1,196 @@
+
+<!--
+  
+Developed by www.kuper.mx  
+  _                          
+ | |                         
+ | | ___   _ _ __   ___ _ __ 
+ | |/ / | | | '_ \ / _ \ '__|
+ |   <| |_| | |_) |  __/ |   
+ |_|\_\\__,_| .__/ \___|_|   
+            | |              
+            |_|                                                                                                                                
+-->
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+
+    <!-- Styles & JS -->
+        <!-- META -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:locale" content="es_ES"/>        
+    
+
+    
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+
+    
+    <title>Topónimos</title>
+    
+  </head>
+  <body>
+
+<div id="container">       
+
+      <div id="header" >          
+              <div class="large-10 medium-8 small-9 columns">
+
+                <h1>Topónimos</h1>
+                <h2>Museo Regional de Guerrero</h2>
+
+              </div>
+
+               <div class="large-2 medium-4 small-5 columns"> <a href="index.php" id="inicio"><img src="img/inicio.png" alt=""></a> </div>
+      </div>
+
+
+
+
+      <div class="large-10 columns" id="info2">
+   
+        <div class="large-6 columns top60"> 
+
+            <div class="large-12 columns "> 
+
+
+                    <div class="large-6 columns "> 
+                            <h1>
+                                Tierra caliente
+                            </h1> 
+                            <hr>
+                            <p>Municipio: <br>
+                                Ajuchitlán del Progreso<br><br>
+
+                                Nombre original:<br>
+                                Axochitlán
+                            </p>
+                    </div>
+
+
+
+                    <div class="large-6 columns "> 
+                            <img src="img/links/_1_mapa_axochitlan.png" alt="">
+                    </div>
+
+                    <div class="large-12 columns "> 
+
+
+                        <div class="large-12 columns "> 
+                        <h1>
+                            Topónimo
+                        </h1> 
+                        <hr>
+                        
+                        </div>
+
+                        <div class="large-12 columns center "> 
+                                <img src="img/links/_1_axochitlan.png" alt="">
+                        </div>
+
+
+                    </div>
+                </div>
+        </div>
+
+        <div class="large-6 columns top60"> 
+
+            <div class="large-12 columns "> 
+
+
+                    <div class="large-12 columns "> 
+                            <h1>
+                               Glifo
+                            </h1> 
+                            <hr>
+                            <p>
+                                Axochitlán es una palabra de origen náhuatl, la cual se representa en el Códice Mendoza con dos glifos:
+                            </p>
+                    </div>
+
+
+
+                    <div class="large-6 columns center "> 
+                            <img src="img/links/_1_glifo_axochitlan.png" alt="">
+                            <p>Xóchitl: flor</p>
+                    </div>
+
+                    <div class="large-12 columns "> 
+
+
+                        <div class="large-12 columns "> 
+                        <h1 class='center'>
+                            Junto a la flor de agua
+                        </h1> 
+                        <p>
+                            Tiempo después recibe el agregado del Progreso por la manifiesta demostración de sus habitantes a  la superación.
+                        </p>
+                        
+                        </div>                    
+
+                    </div>
+                </div>
+        </div>
+
+        
+       </div>
+
+       <div class="large-2 columns top60" id="info"> 
+        
+      
+             
+        <a onclick="window.history.back();return false;" class="button">Regresar</a>
+        <a href="tierracaliente-2.html" class="button">Siguiente</a>
+
+         
+      </div>
+
+      </div>
+
+            
+</div> 
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/foundation.min.js"></script>
+
+
+<script type="text/javascript">
+var idleTime = 0;
+$(document).ready(function () {
+    //Increment the idle time counter every minute.
+    var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
+
+    //Zero the idle timer on mouse movement.
+    $(this).mousemove(function (e) {
+        idleTime = 0;
+    });
+    $(this).keypress(function (e) {
+        idleTime = 0;
+    });
+
+    function timerIncrement() {
+    idleTime = idleTime + 1;
+    if (idleTime > 2) { // 20 minutes
+        window.location.href = 'index.php';
+    }
+    }
+    $('.bxslider').bxSlider({        
+          infiniteLoop: false,
+          hideControlOnEnd: true,
+          easing: 'easeOut',
+          speed: 500,
+          autoControls: true
+    });
+});
+
+</script> 
+  
+                
+</body>
+</html>
